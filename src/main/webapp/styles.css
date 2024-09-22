@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* styles.css */
+.headline {
+    font-size: 36px;
+    font-weight: bold;
+    color: #062500;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    border: 3px solid #002410;
+    border-radius: 10px;
+    background-color: #FFF3E6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* styles.css */
+.problem-section {
+    position: relative; /* Ensure pseudo-element positioning is relative to this element */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    margin-top: 30px; /* Space above the section */
+    padding: 20px; /* Padding inside the section */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white overlay for better text readability */
+}
+
+.problem-section::before {
+    content: "";
+    position: absolute; /* Positioning the pseudo-element */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(rajwada.jpeg); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.problem-section {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    margin-top: 30px; /* Space above the section */
+}
+
+.problem-item {
+    width: 450px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #28A745;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.problem-item:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+/* styles.css */
+footer {
+    background-color: #333; /* Dark background color */
+    color: #FFFFFF; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px; /
+    margin: 0 auto;
+}
+
+.caption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    font-size: 16px;
+}
+
+.contact-info a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+

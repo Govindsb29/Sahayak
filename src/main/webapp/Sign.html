@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Sign Up</title>
+</head>
+<link rel="stylesheet" href="style.css"/>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.jsp"><img src="logo.jpeg"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.jsp">Home</a></li>
+            <li><a href="About.html">About City</a></li>
+            <li><a href="ReportIssue.jsp">Report Problem</a></li>
+            <li><a href="Sign.html">Sign Up</a></li>
+            <li><a href="Login.html"><b>Log In</b></a></li>
+        </ul>
+    </nav>
+</header>
+<div class="formdiv">
+    <h1><u>Sign Up</u></h1>
+    <form action="Sign" method="post">
+        <table>
+            <tr>
+                <td><input type="email" name="EmailID" placeholder="Email ID" required></td>
+            </tr>
+
+            <tr>
+                <td><input type="text" name="Name" placeholder="Name" required></td>
+            </tr>
+
+            <tr>
+                <td><input type="password" name="password" placeholder="Password" required></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" name="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
